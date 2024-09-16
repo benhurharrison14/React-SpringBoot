@@ -1,1 +1,1 @@
-# React-FastAPI
+# bootcamp-120-seeder

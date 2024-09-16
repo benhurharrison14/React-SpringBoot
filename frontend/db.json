@@ -1,0 +1,258 @@
+{
+  "contracts": [
+    {
+      "id": 1,
+      "name": "Contract 1",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 12000.25,
+      "totalFinanced": "-",
+      "totalAvailable": 126722.64,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Contract 2",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Contract 3",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Contract 4",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Contract 5",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Contract 6",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        21120
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Contract 7",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Contract 8",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Contract 9",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Contract 10",
+      "status": "Available",
+      "type": "Monthly",
+      "perPayment": 6000,
+      "totalFinanced": "-",
+      "totalAvailable": 63360,
+      "termLength": [
+        "12 months",
+        "12% Fee"
+      ],
+      "paymentAmount": [
+        63360
+      ]
+    }
+  ],
+  "cashkick": [
+    {
+      "name": "New Cash Kick",
+      "status": "Pending",
+      "maturity": "Sep 20, 2023",
+      "totalFinanced": 127638.672,
+      "totalReceived": [
+        113963.1,
+        "12% Fee"
+      ],
+      "contracts": [
+        1
+      ],
+      "id": 5
+    },
+    {
+      "name": "Hello",
+      "status": "Pending",
+      "maturity": "Sep 20, 2023",
+      "totalFinanced": 199128.2384,
+      "totalReceived": [
+        177793.07,
+        "12% Fee"
+      ],
+      "contracts": [
+        1,
+        2
+      ],
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Kane Cooper",
+      "cashkicks": [
+        1,
+        2
+      ],
+      "payments": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "email": "kaneCooper@gmail.com",
+      "password": "Password@12"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "dueDate": "Oct 23, 2023",
+      "status": "Upcoming",
+      "expectedAmount": 14204.55,
+      "outstanding": 156250.05
+    },
+    {
+      "id": 2,
+      "dueDate": "Nov 03, 2023",
+      "status": "Upcoming",
+      "expectedAmount": 14204.55,
+      "outstanding": 142045.5
+    },
+    {
+      "id": 3,
+      "dueDate": "Oct 25, 2023",
+      "status": "Upcoming",
+      "expectedAmount": 14204.55,
+      "outstanding": 127840.95
+    },
+    {
+      "id": 4,
+      "dueDate": "Sept 25, 2024",
+      "status": "Upcoming",
+      "expectedAmount": 14204.55,
+      "outstanding": 113636.4
+    },
+    {
+      "id": 5,
+      "dueDate": "Sep 23, 2024",
+      "status": "Upcoming",
+      "expectedAmount": 14204.55,
+      "outstanding": 99431.85
+    },
+    {
+      "id": 6,
+      "dueDate": "Oct 03, 2024",
+      "status": "Upcoming",
+      "expectedAmount": 14204.55,
+      "outstanding": 85227.3
+    }
+  ]
+}

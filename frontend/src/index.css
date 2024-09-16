@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("GilroyBold"),
+    url("../public/assets/fonts/Gilroy-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: local("GilroySemibold"),
+    url("../public/assets/fonts/Gilroy-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("GilroyMedium"),
+    url("../public/assets/fonts/Gilroy-Medium.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
