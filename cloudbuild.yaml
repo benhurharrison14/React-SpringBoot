@@ -138,6 +138,9 @@ steps:
       '--allow-unauthenticated'
     ]
 
+  options:
+    logging: CLOUD_LOGGING_ONLY
+
 images:
   - 'gcr.io/$PROJECT_ID/service-registry'
   - 'gcr.io/$PROJECT_ID/api-gateway'
