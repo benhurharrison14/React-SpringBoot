@@ -1,32 +1,32 @@
 steps:
 
   # Step 2: Build and package the Service Registry with Maven
-  - name: 'maven:3.8.6-openjdk-17-buster'
+  - name: 'maven:3.9.4-openjdk-17'
     dir: 'backend/service-registry'
     args: ['mvn', 'clean', 'package', '-DskipTests']
 
   # Step 3: Build and package the API Gateway with Maven
-  - name: 'maven:3.8.6-openjdk-17-buster'
+  - name: 'maven:3.9.4-openjdk-17'
     dir: 'backend/api-gateway'
     args: ['mvn', 'clean', 'package', '-DskipTests']
 
   # Step 4: Build and package the first microservice with Maven
-  - name: 'maven:3.8.6-openjdk-17-buster'
+  - name: 'maven:3.9.4-openjdk-17'
     dir: 'backend/user-service'
     args: ['mvn', 'clean', 'package', '-DskipTests']
 
   # Step 5: Build and package the second microservice with Maven
-  - name: 'maven:3.8.6-openjdk-17-buster'
+  - name: 'maven:3.9.4-openjdk-17'
     dir: 'backend/cashkick-service'
     args: ['mvn', 'clean', 'package', '-DskipTests']
 
   # Step 6: Build and package the third microservice with Maven
-  - name: 'maven:3.8.6-openjdk-17-buster'
+  - name: 'maven:3.9.4-openjdk-17'
     dir: 'backend/contract-service'
     args: ['mvn', 'clean', 'package', '-DskipTests']
 
   # Step 7: Build and package the fourth microservice with Maven
-  - name: 'maven:3.8.6-openjdk-17-buster'
+  - name: 'maven:3.9.4-openjdk-17'
     dir: 'backend/payment-service'
     args: ['mvn', 'clean', 'package', '-DskipTests']
 
