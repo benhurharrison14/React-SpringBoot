@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package
 
 # Expose the application port
-EXPOSE 9001
+EXPOSE 8761
 
 # Run the application
 CMD ["java", "-jar", "/app/target/service-registry-0.0.1-SNAPSHOT.jar"]
