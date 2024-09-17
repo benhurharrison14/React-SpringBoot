@@ -15,4 +15,4 @@ RUN mvn clean package
 EXPOSE 9001
 
 # Run the application
-CMD ["java", "-jar", "/app/target/service-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/app/target/service-registry-0.0.1-SNAPSHOT.jar"]

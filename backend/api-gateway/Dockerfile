@@ -15,4 +15,4 @@ RUN mvn clean package
 EXPOSE 9001
 
 # Run the application
-CMD ["java", "-jar", "/app/target/apigateway-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/app/target/api-gateway-0.0.1-SNAPSHOT.jar"]
