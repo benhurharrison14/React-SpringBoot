@@ -801,15 +801,16 @@ export const paymentColumns = [
   },
 ];
 
-export const BASE_URL = "https://bc120ms.spcluster.tk/";
-export const BE_BASE_URL = "https://bc120be.spcluster.tk/"
+export const BASE_URL = "https://api-gateway-107202934169.us-central1.run.app/";
+export const BE_BASE_URL =
+  "https://api-gateway-107202934169.us-central1.run.app/";
 
 export interface paymentProps {
-  dueDate: Date,
-  status: string,
-  expectedAmount: number,
-  outstandingAmount: number,
-  userId: number
+  dueDate: Date;
+  status: string;
+  expectedAmount: number;
+  outstandingAmount: number;
+  userId: number;
 }
 
 export const months = [
