@@ -3,7 +3,7 @@ FROM node:18.17.0
 
 WORKDIR /app
 
-COPY package*.json /app
+COPY package*.json /app/
 
 RUN npm i
 
