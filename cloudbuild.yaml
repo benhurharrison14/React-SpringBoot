@@ -106,7 +106,7 @@ steps:
       '--region', 'us-central1',
       '--platform', 'managed',
       '--allow-unauthenticated',
-      '--port', '9001' 
+      '--port', '8080' 
     ]
 
   # Step 17: Deploy Microservice 2 to Cloud Run
