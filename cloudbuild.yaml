@@ -98,14 +98,15 @@ steps:
       '--allow-unauthenticated'
     ]
 
-  # # Step 16: Deploy Microservice 1 to Cloud Run
+  # Step 16: Deploy Microservice 1 to Cloud Run
   # - name: 'gcr.io/cloud-builders/gcloud'
   #   args: [
   #     'run', 'deploy', 'user-service',
   #     '--image', 'gcr.io/$PROJECT_ID/user-service',
   #     '--region', 'us-central1',
   #     '--platform', 'managed',
-  #     '--allow-unauthenticated'
+  #     '--allow-unauthenticated',
+  #     '--port', '9001' 
   #   ]
 
   # Step 17: Deploy Microservice 2 to Cloud Run
@@ -115,7 +116,8 @@ steps:
       '--image', 'gcr.io/$PROJECT_ID/cashkick-service',
       '--region', 'us-central1',
       '--platform', 'managed',
-      '--allow-unauthenticated'
+      '--allow-unauthenticated',
+      '--port', '9003' 
     ]
 
   # Step 18: Deploy Microservice 3 to Cloud Run
@@ -125,7 +127,8 @@ steps:
       '--image', 'gcr.io/$PROJECT_ID/contract-service',
       '--region', 'us-central1',
       '--platform', 'managed',
-      '--allow-unauthenticated'
+      '--allow-unauthenticated',
+      '--port', '9002' 
     ]
 
   # Step 19: Deploy Microservice 4 to Cloud Run
@@ -135,7 +138,8 @@ steps:
       '--image', 'gcr.io/$PROJECT_ID/payment-service',
       '--region', 'us-central1',
       '--platform', 'managed',
-      '--allow-unauthenticated'
+      '--allow-unauthenticated',
+      '--port', '9004' 
     ]
 
 options:
