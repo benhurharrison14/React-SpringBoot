@@ -24,7 +24,7 @@ steps:
       '--region', 'us-central1',  # You can specify the appropriate region
       '--platform', 'managed',
       '--allow-unauthenticated',
-      '--port', '8080'  # Default port for most frontend apps
+      '--port', '4000'  # Default port for most frontend apps
     ]
 
 

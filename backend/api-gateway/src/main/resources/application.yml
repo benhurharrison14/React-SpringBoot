@@ -25,14 +25,14 @@ spring:
           uri: lb://CASHKICK-SERVICE
           predicates:
             - Path=/cashkicks/**
-          filters:
-            - AuthenticationFilter
+          # filters:
+          #   - AuthenticationFilter
         - id: CONTRACT-SERVICE
           uri: lb://CONTRACT-SERVICE
           predicates:
             - Path=/contracts/**
-          filters:
-            - AuthenticationFilter
+          # filters:
+          #   - AuthenticationFilter
         - id: PAYMENT-SERVICE
           uri: lb://PAYMENT-SERVICE
           predicates:

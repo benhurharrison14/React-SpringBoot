@@ -16,7 +16,8 @@ import { getUser, getUserDetail, postUser } from "./services";
 import { SLIDER_MAX_AMOUNT } from "./utils/constants";
 
 const App = () => {
-  const { userId, setUserId, setUserName, setCreditBalance, creditBalance } = useAppContext();
+  const { userId, setUserId, setUserName, setCreditBalance, creditBalance } =
+    useAppContext();
   const { isAuthenticated, user } = useAuth0();
   useEffect(() => {
     if (isAuthenticated) {

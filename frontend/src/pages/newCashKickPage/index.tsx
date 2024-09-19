@@ -171,7 +171,7 @@ const NewCashKickBody = () => {
     status: "Upcoming",
     expectedAmount: totalAmount / 12,
     outstandingAmount: totalAmount - month * (totalAmount / 12),
-    userId: userId
+    userId: userId,
   });
 
   const handleNameSubmit = async () => {
@@ -210,8 +210,8 @@ const NewCashKickBody = () => {
 
     for (let i = 1; i <= 12; i++) {
       currentDate.setMonth(currentDate.getMonth() + 1);
-      const dueDate = currentDate.toISOString().substring(0,10);
-      postPayment(createPayment(i,new Date(dueDate)))
+      const dueDate = currentDate.toISOString().substring(0, 10);
+      postPayment(createPayment(i, new Date(dueDate)));
     }
 
     setSubmitReview(true);
@@ -253,7 +253,7 @@ const NewCashKickBody = () => {
       setSliderValue(0);
       setPartialPayment(0);
     }
-  }, [rowId]);
+  }, [cashAccelerationRows, creditBalance, partialPayment, rowId]);
 
   useEffect(() => {
     const selectedRowIds = [...rowId];
@@ -282,7 +282,7 @@ const NewCashKickBody = () => {
       setPartialPayment(partial);
       setRowId(selectedRowIds);
     }
-  }, [sliderValue]);
+  }, [cashAccelerationRows, creditBalance, rowId, sliderValue]);
 
   const onHandleSlider = (event: Event, value: number | number[]) => {
     let totalSelectedPayment = totalPayment;
