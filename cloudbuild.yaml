@@ -128,7 +128,7 @@ steps:
       '--allow-unauthenticated'
     ]
 
-  Step 16: Deploy Microservice 1 to Cloud Run
+  # Step 16: Deploy Microservice 1 to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
     args: [
       'run', 'deploy', 'user-service',
