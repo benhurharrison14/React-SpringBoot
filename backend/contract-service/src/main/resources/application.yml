@@ -23,6 +23,8 @@ eureka:
       defaultZone: https://service-registry-107202934169.us-central1.run.app/eureka/
   instance:
     prefer-ip-address: false
-    hostname: https://contract-service-107202934169.us-central1.run.app
+    hostname: contract-service-107202934169.us-central1.run.app
     non-secure-port-enabled: false
     secure-port-enabled: true
+    status-page-url: https://contract-service-107202934169.us-central1.run.app/actuator/info
+    health-check-url: https://contract-service-107202934169.us-central1.run.app/actuator/health
