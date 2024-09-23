@@ -21,3 +21,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: https://service-registry-107202934169.us-central1.run.app/eureka/
+  instance:
+    prefer-ip-address: false
+    hostname: https://contract-service-107202934169.us-central1.run.app
+    non-secure-port-enabled: false
+    secure-port-enabled: true
