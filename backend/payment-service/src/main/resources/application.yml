@@ -29,3 +29,16 @@ eureka:
     secure-port-enabled: true
     status-page-url: https://payment-service-107202934169.us-central1.run.app/actuator/info
     health-check-url: https://payment-service-107202934169.us-central1.run.app/actuator/health
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+security:
+  ignored: /actuator/health, /actuator/info  # Allow access without authentication

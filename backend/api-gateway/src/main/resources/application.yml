@@ -54,6 +54,18 @@ eureka:
     secure-port-enabled: true
     status-page-url: https://api-gateway-107202934169.us-central1.run.app/actuator/info
     health-check-url: https://api-gateway-107202934169.us-central1.run.app/actuator/health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+security:
+  ignored: /actuator/health, /actuator/info  # Allow access without authentication
+
 
 application:
   security:

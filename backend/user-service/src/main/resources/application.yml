@@ -20,6 +20,19 @@ spring:
   #   locations: classpath:db/migration
   #   debug: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+security:
+  ignored: /actuator/health, /actuator/info  # Allow access without authentication
+
+
 eureka:
   client:
     register-with-eureka: true
