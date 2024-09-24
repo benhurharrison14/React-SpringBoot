@@ -18,23 +18,23 @@ spring:
             allowedMethods: "*"
       routes:
         - id: USER-SERVICE
-          uri: lb://USER-SERVICE
+          uri: https://user-service-107202934169.us-central1.run.app
           predicates:
             - Path=/users/**
         - id: CASHKICK-SERVICE
-          uri: lb://CASHKICK-SERVICE
+          uri: https://cashkick-service-107202934169.us-central1.run.app
           predicates:
             - Path=/cashkicks/**
           # filters:
           #   - AuthenticationFilter
         - id: CONTRACT-SERVICE
-          uri: lb://CONTRACT-SERVICE
+          uri: https://contract-service-107202934169.us-central1.run.app
           predicates:
             - Path=/contracts/**
           # filters:
           #   - AuthenticationFilter
         - id: PAYMENT-SERVICE
-          uri: lb://PAYMENT-SERVICE
+          uri: https://payment-service-107202934169.us-central1.run.app
           predicates:
             - Path=/payments/**
           # filters:
