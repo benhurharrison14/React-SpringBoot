@@ -25,20 +25,20 @@ spring:
           uri: https://cashkick-service-107202934169.us-central1.run.app
           predicates:
             - Path=/cashkicks/**
-          # filters:
-          #   - AuthenticationFilter
+          filters:
+            - AuthenticationFilter
         - id: CONTRACT-SERVICE
           uri: https://contract-service-107202934169.us-central1.run.app
           predicates:
             - Path=/contracts/**
-          # filters:
-          #   - AuthenticationFilter
+          filters:
+            - AuthenticationFilter
         - id: PAYMENT-SERVICE
           uri: https://payment-service-107202934169.us-central1.run.app
           predicates:
             - Path=/payments/**
-          # filters:
-          #   - AuthenticationFilter
+          filters:
+            - AuthenticationFilter
 
 
 eureka:
@@ -47,24 +47,6 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: https://service-registry-107202934169.us-central1.run.app/eureka/
-  instance:
-    prefer-ip-address: false
-    hostname: api-gateway-107202934169.us-central1.run.app
-    non-secure-port-enabled: false
-    secure-port-enabled: true
-    status-page-url: https://api-gateway-107202934169.us-central1.run.app/actuator/info
-    health-check-url: https://api-gateway-107202934169.us-central1.run.app/actuator/health
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-
-security:
-  ignored: /actuator/health, /actuator/info  # Allow access without authentication
 
 
 application:

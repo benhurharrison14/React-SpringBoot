@@ -15,23 +15,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-  # flyway:
-  #   baseline-on-migrate: true
-  #   locations: classpath:db/migration
-  #   debug: true
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-
-security:
-  ignored: /actuator/health, /actuator/info  # Allow access without authentication
-
+  flyway:
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+    debug: true
 
 eureka:
   client:
@@ -39,13 +26,6 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: https://service-registry-107202934169.us-central1.run.app/eureka/
-  instance:
-    prefer-ip-address: false
-    hostname: user-service-107202934169.us-central1.run.app 
-    non-secure-port-enabled: false
-    secure-port-enabled: true
-    status-page-url: https://user-service-107202934169.us-central1.run.app/actuator/info
-    health-check-url: https://user-service-107202934169.us-central1.run.app/actuator/health
     
 application:
   security:
