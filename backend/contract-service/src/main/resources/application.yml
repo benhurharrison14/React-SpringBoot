@@ -5,7 +5,7 @@ spring:
   application:
     name: CONTRACT-SERVICE
   datasource:
-    url: jdbc:mysql://130.211.199.78:3306/seeder
+    url: jdbc:mysql://34.70.160.24:3306/seeder
     username: root
     password: system
     hikari:
