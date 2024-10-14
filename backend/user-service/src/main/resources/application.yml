@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://34.70.160.24:3306/seeder
     username: root
-    password: system
+    password: SystemN8n14*
     hikari:
       maximum-pool-size: 10
   jpa:
